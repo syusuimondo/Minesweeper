@@ -13,37 +13,43 @@ void player_init(){
 	player.flag = 1;
 	player.count = 0;
 	player.load = LoadGraph("‰æ‘œ/player.png");
-	sousa = LoadGraph("‰æ‘œ/review.png");
+	sousa = LoadGraph("‰æ‘œ/sousa.png");
 	tama_count = 10;
 	tama = LoadGraph("‰æ‘œ/tama.png");
 }
 void player_updata(){
-	if(Key[KEY_INPUT_F] == 1 && player.x <MAP_SIZE-1){
+	//¶ˆÚ“®
+	if(Key[KEY_INPUT_D] == 1 && player.x <MAP_SIZE-1){
 		player.x++;
 	}
+	//‰EˆÚ“®
 	if(Key[KEY_INPUT_A] == 1 && player.x > 0){
 		player.x--;
 	}
-	if(Key[KEY_INPUT_D] == 1 && player.y <MAP_SIZE-1){
+	//‰ºˆÚ“®
+	if(Key[KEY_INPUT_S] == 1 && player.y <MAP_SIZE-1){
 		player.y++;
 	}
-	if(Key[KEY_INPUT_S] == 1&& player.y> 0){
+	//ãˆÚ“®
+	if(Key[KEY_INPUT_W] == 1&& player.y> 0){
 		player.y--;
 	}
+	//’n—‹ŒŸ¸
 	if(Key[KEY_INPUT_J] == 1){
 		if(map_kensa(player.x,player.y) == 1){
 			music_draw(1);
 			player.flag = 2;
 		}
 	}
+	//’n—‹”j‰ó
 	if(Key[KEY_INPUT_K] == 1){
-		music_draw(0);
 		switch(map_kensa(player.x,player.y)){
 		case 0:
 			music_draw(1);
 			player.flag = 2;
 			break;
 		case 1:
+			music_draw(0);
 			tama_count--;
 			player.count++;
 			break;

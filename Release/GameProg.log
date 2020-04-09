@@ -1,0 +1,27 @@
+﻿2020/01/13 12:56:13 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\マインスイーパー\GameProg.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "Release\GameProg.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I./DxLib/ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _MBCS /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt player.cpp
+         player.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\マインスイーパー\Release\GameProg.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:./DxLib/ kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\GameProg.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\マインスイーパー\Release\GameProg.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\マインスイーパー\Release\GameProg.lib" /MACHINE:X86 Release\map.obj
+         Release\music.obj
+         Release\player.obj
+         Release\test.obj
+         コード生成しています。
+     1>c:\マインスイーパー\player.cpp(75): warning C4715: 'player_fin' : 値を返さないコントロール パスがあります。
+     1>c:\マインスイーパー\map.cpp(48): warning C4715: 'map_kensa' : 値を返さないコントロール パスがあります。
+         コード生成が終了しました。
+         GameProg.vcxproj -> C:\マインスイーパー\Release\GameProg.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\マインスイーパー\Release\GameProg.exe;#1" /manifest Release\GameProg.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         ファイル "Release\GameProg.unsuccessfulbuild" を削除しています。
+         "Release\GameProg.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\マインスイーパー\GameProg.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.84
